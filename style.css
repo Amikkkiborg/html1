@@ -1,0 +1,442 @@
+body{
+  font-family:sans-serif;
+  font-weight: bold;
+}
+header{
+  background:#000;
+  display:flex;
+  width:100%;
+}
+.header_logo{
+  color:white;
+  text-transform:uppercase;
+  font-weight:600;
+  font-size:24px;
+  cursor:pointer;
+  margin-top:56px;
+  margin-left:12%
+}
+nav{
+  margin-top:100px;
+  margin-left:45%;
+}
+.topnav a{
+  color:white;
+  text-align:center;
+  padding:13px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+  .topnav a:hover{
+    border-bottom:3px solid #fcac45;
+    color: #fcac45;
+  }
+
+.topnav .icon{
+  display:none;
+}
+@media screen and (max-width:1200px){
+  margin-left:10%;
+}
+
+
+@media screen and (max-width:1010px){ 
+  .topnav a{
+    display:none;
+
+  }
+  .topnav a.icon{
+    float: right;
+    display: block;
+    color: white;
+    margin-top: -15px;
+    font-size: 25px;
+  }
+  nav{
+    width: 100%;
+  }
+  .topnav.responsive{
+    position: relative;
+    top: 50px;
+    left: -200px;
+  }
+  header .topnav.responsive{
+    height: 340px;
+  }
+
+  .topnav.responsive a.icon{
+    position: absolute;
+    top: -50px;
+    right: -200px;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+} 
+
+
+
+main{
+  display: flex;
+  flex-direction: column;
+width: 100%;
+
+
+}
+main .main_welcome {
+  
+  text-align: center;
+  color: gray;
+  padding: 200px 0  400px 0 ;
+  background-color: black;
+  }
+  main .main_welcome p{
+    font-size: 20px;
+      }
+
+  main .main_welcome h1{
+    font-size: 44px;
+  }
+  .mycompany{
+    color:#fcac45   ;
+  }
+  .wrapper{
+    width: 76%;
+    margin: 0 auto;
+  padding: 100px 0 100px 0;
+  
+
+  }
+  .main_about{
+    
+      display: flex;
+  }
+
+.about_right{
+  margin-left: 175px;
+}
+.about_right h1{
+  display: inline-block;
+  border-bottom: 3px solid #fcac45;
+padding-bottom: 20px;
+
+}
+.about_right p{
+  margin: 30px 0 50px 0;
+  color: #6c6c6c;
+  width: 70%;
+
+}
+li{
+  list-style-type: none;
+}
+.about_right li{
+  background: url(img/mark.png) 0px no-repeat; 
+padding-left: 25px;
+margin-left: -39px;
+margin-top: 10px;
+}
+@media screen and (max-width:1010px){
+
+
+.mw-100{
+  min-width: 100%;
+
+
+}
+
+
+
+main .main_welcome p{ 
+  font-size: 14px;
+} 
+main .main_welcome h1{ 
+  font-size: 25px;
+} 
+
+.mw-100{
+  max-width: 100%;
+}
+.main_about{
+  flex-direction: column;
+
+}
+.about_right{
+  text-align: center;
+
+  margin-left: 0;
+
+  
+}
+.about_right h1:after{
+  display: none;
+}
+.about_right li{
+  text-align: left;
+
+}
+.team_cards{
+  flex-direction: column;
+}
+}
+
+.main_team{
+  background: black;
+  text-align: center;
+  padding: 100px 0 165px 0;
+  color: white;
+}
+.main_team h1{
+  font-size: 44px;
+  padding-bottom: 30px;
+
+}
+/*
+.line{
+  width: 100px;
+  height: 3px;
+  background: #fcac45;
+  position: relative;
+  left: 47%;
+  margin-bottom: 105px;
+*/
+}
+.photo{
+  background-color: gray;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  margin: 20px auto;
+
+}
+.team_cards{
+  display: flex;
+  }
+  .cards {
+   padding-left: 50px;
+
+  }
+  .name{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 7px;
+  }
+  .position{
+    font-weight: normal;
+font-size: 16px;
+margin-bottom: 35px;
+  }
+  .describe{
+   font-weight: normal;
+font-size: 16px;
+  } 
+
+
+  .service_cards{
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    grid-column-gap: 20px; 
+
+  }
+  .main_services h1{
+    text-align: center;
+   padding: 100px 0 30px 0;
+
+
+  }
+
+  .p{
+  margin: 0 190px 100px 190px;
+  color: gray;
+  font-weight: normal;
+  }
+  .service_cards h4{
+    font-size:20px ;
+   margin-top: 20px;
+   margin-bottom: 15px;
+  }
+.service_card p{
+    font-size:15px ;
+    font-weight: normal;
+  }
+
+.service_clients{
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+.service_clients h1{
+  padding-top:100px ;
+  font-weight: normal;
+
+}
+.service_clients span{
+  font-weight: bold;
+}
+
+.clientss{
+  padding: 100px 30px 200px 30px;
+
+}
+.label{
+  margin-left: 40px;
+  margin-bottom: 10px;
+}
+.Testimonals{
+  background: black;
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+
+
+}
+.Testimonals h1{
+  font-weight: normal;
+}
+.Testimonals span{
+  font-weight: bold;
+
+}
+.text{
+   padding: 100px 280px 100px 280px;
+   font-weight: normal;
+}
+
+.esc{
+  background: whitesmoke;
+  text-align: center;
+  margin-bottom: 100px;
+  
+}
+.our_work h1{
+ margin-top: 100px;
+  font-weight: normal;
+}
+.txt p{
+  padding: 50px 185px 175px 185px;
+  font-weight: normal;
+  color: gray;
+}
+
+.imgg{
+  padding: 20px 20px 20px 20px;
+opacity: 0.9;
+}
+
+
+
+@media screen and (max-width:1050px){
+
+.line1 img:not(:first-child){
+  display: none;
+}
+
+.linee3 img:not(:first-child){
+  display: none;
+}
+.line2 img:not(:first-child){
+  display: none;
+}
+
+
+
+}
+
+.wrapeer{
+  width: 753px;
+  margin: 0 auto;
+  color: gray;
+    padding: 100px 0 100px 0;
+
+}
+
+.red{
+  color: red;
+}
+input{
+  width:360px ;
+  height: 40px;
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #636363; 
+
+}
+input:first-of-type{
+  margin-right:23px ;
+}
+
+ textarea{
+  width: 100%;
+  height: 170px ;
+ }
+ textarea,input {
+  border: 1px solid #999999;
+ }
+ .form{
+  display: flex;
+ } 
+ .button{
+  display: flex;
+  justify-content: flex-end;
+ }
+ input[type=submit]{
+  width: 165px;
+  height: 40px;
+  background:#fcac45 ;
+  color: white;
+  margin-right: 0;
+  margin-top: 30px;
+ }
+ .s p{
+  text-align: center;
+ margin-top:30px ;
+
+}
+.s h1{
+  color: black;
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+
+}
+
+h1:after{
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  padding-top:30px ;
+  border-bottom: 3px solid #fcac45;
+}
+.wrapeeer{
+  text-align: center;
+  
+}
+.w{
+  margin-left: 10px;
+
+
+}
+.social{
+  display: flex;
+  justify-content: center;
+
+}
+.social img:hover{
+  opacity: 0.6;
+}
+footer{
+  width: 100%;
+  height:auto;
+  background:#222222 ;
+  padding: 30px 0 30px 0;
+
+}
+.main_welcome h1:after{
+  display: none;
+}
